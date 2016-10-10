@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d66a182a-f75f-4a9b-b1bb-be96af9a9a17" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.1.39/HukukWsApp/HsClient.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HsClient4.xsd" MetadataType="Schema" ID="e59ff1c4-d912-4b14-9931-709c3a571eb0" SourceId="1" SourceUrl="http://192.168.1.39/HukukWsApp/HsClient.svc?xsd=xsd3" />
+    <MetadataFile FileName="HsClient41.xsd" MetadataType="Schema" ID="59151428-2223-49df-a4cd-a70b18b951d5" SourceId="1" SourceUrl="http://192.168.1.39/HukukWsApp/HsClient.svc?xsd=xsd2" />
+    <MetadataFile FileName="HsClient42.xsd" MetadataType="Schema" ID="a58a644d-ba62-4878-ad21-3e2e386b8e25" SourceId="1" SourceUrl="http://192.168.1.39/HukukWsApp/HsClient.svc?xsd=xsd0" />
+    <MetadataFile FileName="HsClient1.wsdl" MetadataType="Wsdl" ID="a3963f0c-1019-41fc-b7b7-6fddf37845eb" SourceId="1" SourceUrl="http://192.168.1.39/HukukWsApp/HsClient.svc?wsdl" />
+    <MetadataFile FileName="HsClient1.disco" MetadataType="Disco" ID="16349140-e80c-4d52-9fcc-ad34e1fe4dea" SourceId="1" SourceUrl="http://192.168.1.39/HukukWsApp/HsClient.svc?disco" />
+    <MetadataFile FileName="HsClient43.xsd" MetadataType="Schema" ID="6b2a0d9b-ae58-44a2-b2da-13e69223facd" SourceId="1" SourceUrl="http://192.168.1.39/HukukWsApp/HsClient.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
