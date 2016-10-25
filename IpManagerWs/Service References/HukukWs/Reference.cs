@@ -15,9 +15,9 @@ namespace IpManagerWs.HukukWs {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="HsResponseOfstring", Namespace="http://schemas.datacontract.org/2004/07/IpManagerWs.Model")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="HsResponseAuthenticate", Namespace="http://schemas.datacontract.org/2004/07/HukukWs.Model")]
     [System.SerializableAttribute()]
-    public partial class HsResponseOfstring : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class HsResponseAuthenticate : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -28,7 +28,7 @@ namespace IpManagerWs.HukukWs {
         
         private IpManagerWs.HukukWs.Statu Statuk__BackingFieldField;
         
-        private string[] genericListk__BackingFieldField;
+        private int UserIdk__BackingFieldField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -79,15 +79,15 @@ namespace IpManagerWs.HukukWs {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(Name="<genericList>k__BackingField", IsRequired=true)]
-        public string[] genericListk__BackingField {
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<UserId>k__BackingField", IsRequired=true)]
+        public int UserIdk__BackingField {
             get {
-                return this.genericListk__BackingFieldField;
+                return this.UserIdk__BackingFieldField;
             }
             set {
-                if ((object.ReferenceEquals(this.genericListk__BackingFieldField, value) != true)) {
-                    this.genericListk__BackingFieldField = value;
-                    this.RaisePropertyChanged("genericListk__BackingField");
+                if ((this.UserIdk__BackingFieldField.Equals(value) != true)) {
+                    this.UserIdk__BackingFieldField = value;
+                    this.RaisePropertyChanged("UserIdk__BackingField");
                 }
             }
         }
@@ -103,7 +103,7 @@ namespace IpManagerWs.HukukWs {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Statu", Namespace="http://schemas.datacontract.org/2004/07/IpManagerWs.Model")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Statu", Namespace="http://schemas.datacontract.org/2004/07/HukukWs.Model")]
     public enum Statu : int {
         
         [System.Runtime.Serialization.EnumMemberAttribute()]
@@ -115,24 +115,20 @@ namespace IpManagerWs.HukukWs {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="GetMattersResponse", Namespace="http://schemas.datacontract.org/2004/07/IpManagerWs.Model")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="GetMattersResponse", Namespace="http://schemas.datacontract.org/2004/07/HukukWs.Model")]
     [System.SerializableAttribute()]
     public partial class GetMattersResponse : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private IpManagerWs.HukukWs.Matter[] MattersField;
+        private IpManagerWs.HukukWs.Proje[] Mattersk__BackingFieldField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MessageField;
+        private string Messagek__BackingFieldField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string OperationField;
+        private string Operationk__BackingFieldField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private IpManagerWs.HukukWs.Statu StatuField;
+        private IpManagerWs.HukukWs.Statu Statuk__BackingFieldField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -144,54 +140,54 @@ namespace IpManagerWs.HukukWs {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public IpManagerWs.HukukWs.Matter[] Matters {
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<Matters>k__BackingField", IsRequired=true)]
+        public IpManagerWs.HukukWs.Proje[] Mattersk__BackingField {
             get {
-                return this.MattersField;
+                return this.Mattersk__BackingFieldField;
             }
             set {
-                if ((object.ReferenceEquals(this.MattersField, value) != true)) {
-                    this.MattersField = value;
-                    this.RaisePropertyChanged("Matters");
+                if ((object.ReferenceEquals(this.Mattersk__BackingFieldField, value) != true)) {
+                    this.Mattersk__BackingFieldField = value;
+                    this.RaisePropertyChanged("Mattersk__BackingField");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Message {
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<Message>k__BackingField", IsRequired=true)]
+        public string Messagek__BackingField {
             get {
-                return this.MessageField;
+                return this.Messagek__BackingFieldField;
             }
             set {
-                if ((object.ReferenceEquals(this.MessageField, value) != true)) {
-                    this.MessageField = value;
-                    this.RaisePropertyChanged("Message");
+                if ((object.ReferenceEquals(this.Messagek__BackingFieldField, value) != true)) {
+                    this.Messagek__BackingFieldField = value;
+                    this.RaisePropertyChanged("Messagek__BackingField");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Operation {
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<Operation>k__BackingField", IsRequired=true)]
+        public string Operationk__BackingField {
             get {
-                return this.OperationField;
+                return this.Operationk__BackingFieldField;
             }
             set {
-                if ((object.ReferenceEquals(this.OperationField, value) != true)) {
-                    this.OperationField = value;
-                    this.RaisePropertyChanged("Operation");
+                if ((object.ReferenceEquals(this.Operationk__BackingFieldField, value) != true)) {
+                    this.Operationk__BackingFieldField = value;
+                    this.RaisePropertyChanged("Operationk__BackingField");
                 }
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public IpManagerWs.HukukWs.Statu Statu {
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<Statu>k__BackingField", IsRequired=true)]
+        public IpManagerWs.HukukWs.Statu Statuk__BackingField {
             get {
-                return this.StatuField;
+                return this.Statuk__BackingFieldField;
             }
             set {
-                if ((this.StatuField.Equals(value) != true)) {
-                    this.StatuField = value;
-                    this.RaisePropertyChanged("Statu");
+                if ((this.Statuk__BackingFieldField.Equals(value) != true)) {
+                    this.Statuk__BackingFieldField = value;
+                    this.RaisePropertyChanged("Statuk__BackingField");
                 }
             }
         }
@@ -208,9 +204,9 @@ namespace IpManagerWs.HukukWs {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Matter", Namespace="http://schemas.datacontract.org/2004/07/IpManagerWs.Model")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Proje", Namespace="http://schemas.datacontract.org/2004/07/HukukWs.Model")]
     [System.SerializableAttribute()]
-    public partial class Matter : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class Proje : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -507,7 +503,7 @@ namespace IpManagerWs.HukukWs {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="GetKullanicilarResponse", Namespace="http://schemas.datacontract.org/2004/07/IpManagerWs.Model")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="GetKullanicilarResponse", Namespace="http://schemas.datacontract.org/2004/07/HukukWs.Model")]
     [System.SerializableAttribute()]
     public partial class GetKullanicilarResponse : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -600,7 +596,7 @@ namespace IpManagerWs.HukukWs {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Kullanicilar", Namespace="http://schemas.datacontract.org/2004/07/IpManagerWs.Model")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Kullanicilar", Namespace="http://schemas.datacontract.org/2004/07/HukukWs.Model")]
     [System.SerializableAttribute()]
     public partial class Kullanicilar : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
@@ -822,27 +818,649 @@ namespace IpManagerWs.HukukWs {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="GetCalismalarResponse", Namespace="http://schemas.datacontract.org/2004/07/HukukWs.Model")]
+    [System.SerializableAttribute()]
+    public partial class GetCalismalarResponse : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private IpManagerWs.HukukWs.Calismalar[] Calismalark__BackingFieldField;
+        
+        private string Messagek__BackingFieldField;
+        
+        private string Operationk__BackingFieldField;
+        
+        private IpManagerWs.HukukWs.Statu Statuk__BackingFieldField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<Calismalar>k__BackingField", IsRequired=true)]
+        public IpManagerWs.HukukWs.Calismalar[] Calismalark__BackingField {
+            get {
+                return this.Calismalark__BackingFieldField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Calismalark__BackingFieldField, value) != true)) {
+                    this.Calismalark__BackingFieldField = value;
+                    this.RaisePropertyChanged("Calismalark__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<Message>k__BackingField", IsRequired=true)]
+        public string Messagek__BackingField {
+            get {
+                return this.Messagek__BackingFieldField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Messagek__BackingFieldField, value) != true)) {
+                    this.Messagek__BackingFieldField = value;
+                    this.RaisePropertyChanged("Messagek__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<Operation>k__BackingField", IsRequired=true)]
+        public string Operationk__BackingField {
+            get {
+                return this.Operationk__BackingFieldField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Operationk__BackingFieldField, value) != true)) {
+                    this.Operationk__BackingFieldField = value;
+                    this.RaisePropertyChanged("Operationk__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<Statu>k__BackingField", IsRequired=true)]
+        public IpManagerWs.HukukWs.Statu Statuk__BackingField {
+            get {
+                return this.Statuk__BackingFieldField;
+            }
+            set {
+                if ((this.Statuk__BackingFieldField.Equals(value) != true)) {
+                    this.Statuk__BackingFieldField = value;
+                    this.RaisePropertyChanged("Statuk__BackingField");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Calismalar", Namespace="http://schemas.datacontract.org/2004/07/HukukWs.Model")]
+    [System.SerializableAttribute()]
+    public partial class Calismalar : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private string Aciklamak__BackingFieldField;
+        
+        private string BaslangicSaatik__BackingFieldField;
+        
+        private string BitisSaatik__BackingFieldField;
+        
+        private double FaturalananSaatk__BackingFieldField;
+        
+        private double FaturalanmayanSaatk__BackingFieldField;
+        
+        private string FullNameCalisank__BackingFieldField;
+        
+        private int IDk__BackingFieldField;
+        
+        private int KullaniciIDk__BackingFieldField;
+        
+        private int OnayDurumuIDk__BackingFieldField;
+        
+        private string OnayDurumuk__BackingFieldField;
+        
+        private string ProjeAdik__BackingFieldField;
+        
+        private int ProjeIDk__BackingFieldField;
+        
+        private string ProjeKoduk__BackingFieldField;
+        
+        private double SilenenSaatk__BackingFieldField;
+        
+        private string Tarihk__BackingFieldField;
+        
+        private int Yetkik__BackingFieldField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<Aciklama>k__BackingField", IsRequired=true)]
+        public string Aciklamak__BackingField {
+            get {
+                return this.Aciklamak__BackingFieldField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Aciklamak__BackingFieldField, value) != true)) {
+                    this.Aciklamak__BackingFieldField = value;
+                    this.RaisePropertyChanged("Aciklamak__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<BaslangicSaati>k__BackingField", IsRequired=true)]
+        public string BaslangicSaatik__BackingField {
+            get {
+                return this.BaslangicSaatik__BackingFieldField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BaslangicSaatik__BackingFieldField, value) != true)) {
+                    this.BaslangicSaatik__BackingFieldField = value;
+                    this.RaisePropertyChanged("BaslangicSaatik__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<BitisSaati>k__BackingField", IsRequired=true)]
+        public string BitisSaatik__BackingField {
+            get {
+                return this.BitisSaatik__BackingFieldField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.BitisSaatik__BackingFieldField, value) != true)) {
+                    this.BitisSaatik__BackingFieldField = value;
+                    this.RaisePropertyChanged("BitisSaatik__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<FaturalananSaat>k__BackingField", IsRequired=true)]
+        public double FaturalananSaatk__BackingField {
+            get {
+                return this.FaturalananSaatk__BackingFieldField;
+            }
+            set {
+                if ((this.FaturalananSaatk__BackingFieldField.Equals(value) != true)) {
+                    this.FaturalananSaatk__BackingFieldField = value;
+                    this.RaisePropertyChanged("FaturalananSaatk__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<FaturalanmayanSaat>k__BackingField", IsRequired=true)]
+        public double FaturalanmayanSaatk__BackingField {
+            get {
+                return this.FaturalanmayanSaatk__BackingFieldField;
+            }
+            set {
+                if ((this.FaturalanmayanSaatk__BackingFieldField.Equals(value) != true)) {
+                    this.FaturalanmayanSaatk__BackingFieldField = value;
+                    this.RaisePropertyChanged("FaturalanmayanSaatk__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<FullNameCalisan>k__BackingField", IsRequired=true)]
+        public string FullNameCalisank__BackingField {
+            get {
+                return this.FullNameCalisank__BackingFieldField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FullNameCalisank__BackingFieldField, value) != true)) {
+                    this.FullNameCalisank__BackingFieldField = value;
+                    this.RaisePropertyChanged("FullNameCalisank__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<ID>k__BackingField", IsRequired=true)]
+        public int IDk__BackingField {
+            get {
+                return this.IDk__BackingFieldField;
+            }
+            set {
+                if ((this.IDk__BackingFieldField.Equals(value) != true)) {
+                    this.IDk__BackingFieldField = value;
+                    this.RaisePropertyChanged("IDk__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<KullaniciID>k__BackingField", IsRequired=true)]
+        public int KullaniciIDk__BackingField {
+            get {
+                return this.KullaniciIDk__BackingFieldField;
+            }
+            set {
+                if ((this.KullaniciIDk__BackingFieldField.Equals(value) != true)) {
+                    this.KullaniciIDk__BackingFieldField = value;
+                    this.RaisePropertyChanged("KullaniciIDk__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<OnayDurumuID>k__BackingField", IsRequired=true)]
+        public int OnayDurumuIDk__BackingField {
+            get {
+                return this.OnayDurumuIDk__BackingFieldField;
+            }
+            set {
+                if ((this.OnayDurumuIDk__BackingFieldField.Equals(value) != true)) {
+                    this.OnayDurumuIDk__BackingFieldField = value;
+                    this.RaisePropertyChanged("OnayDurumuIDk__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<OnayDurumu>k__BackingField", IsRequired=true)]
+        public string OnayDurumuk__BackingField {
+            get {
+                return this.OnayDurumuk__BackingFieldField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.OnayDurumuk__BackingFieldField, value) != true)) {
+                    this.OnayDurumuk__BackingFieldField = value;
+                    this.RaisePropertyChanged("OnayDurumuk__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<ProjeAdi>k__BackingField", IsRequired=true)]
+        public string ProjeAdik__BackingField {
+            get {
+                return this.ProjeAdik__BackingFieldField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ProjeAdik__BackingFieldField, value) != true)) {
+                    this.ProjeAdik__BackingFieldField = value;
+                    this.RaisePropertyChanged("ProjeAdik__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<ProjeID>k__BackingField", IsRequired=true)]
+        public int ProjeIDk__BackingField {
+            get {
+                return this.ProjeIDk__BackingFieldField;
+            }
+            set {
+                if ((this.ProjeIDk__BackingFieldField.Equals(value) != true)) {
+                    this.ProjeIDk__BackingFieldField = value;
+                    this.RaisePropertyChanged("ProjeIDk__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<ProjeKodu>k__BackingField", IsRequired=true)]
+        public string ProjeKoduk__BackingField {
+            get {
+                return this.ProjeKoduk__BackingFieldField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ProjeKoduk__BackingFieldField, value) != true)) {
+                    this.ProjeKoduk__BackingFieldField = value;
+                    this.RaisePropertyChanged("ProjeKoduk__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<SilenenSaat>k__BackingField", IsRequired=true)]
+        public double SilenenSaatk__BackingField {
+            get {
+                return this.SilenenSaatk__BackingFieldField;
+            }
+            set {
+                if ((this.SilenenSaatk__BackingFieldField.Equals(value) != true)) {
+                    this.SilenenSaatk__BackingFieldField = value;
+                    this.RaisePropertyChanged("SilenenSaatk__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<Tarih>k__BackingField", IsRequired=true)]
+        public string Tarihk__BackingField {
+            get {
+                return this.Tarihk__BackingFieldField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Tarihk__BackingFieldField, value) != true)) {
+                    this.Tarihk__BackingFieldField = value;
+                    this.RaisePropertyChanged("Tarihk__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<Yetki>k__BackingField", IsRequired=true)]
+        public int Yetkik__BackingField {
+            get {
+                return this.Yetkik__BackingFieldField;
+            }
+            set {
+                if ((this.Yetkik__BackingFieldField.Equals(value) != true)) {
+                    this.Yetkik__BackingFieldField = value;
+                    this.RaisePropertyChanged("Yetkik__BackingField");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="GetCreateResponse", Namespace="http://schemas.datacontract.org/2004/07/HukukWs.Model")]
+    [System.SerializableAttribute()]
+    public partial class GetCreateResponse : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private string Messagek__BackingFieldField;
+        
+        private string Operationk__BackingFieldField;
+        
+        private IpManagerWs.HukukWs.Statu Statuk__BackingFieldField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<Message>k__BackingField", IsRequired=true)]
+        public string Messagek__BackingField {
+            get {
+                return this.Messagek__BackingFieldField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Messagek__BackingFieldField, value) != true)) {
+                    this.Messagek__BackingFieldField = value;
+                    this.RaisePropertyChanged("Messagek__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<Operation>k__BackingField", IsRequired=true)]
+        public string Operationk__BackingField {
+            get {
+                return this.Operationk__BackingFieldField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Operationk__BackingFieldField, value) != true)) {
+                    this.Operationk__BackingFieldField = value;
+                    this.RaisePropertyChanged("Operationk__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<Statu>k__BackingField", IsRequired=true)]
+        public IpManagerWs.HukukWs.Statu Statuk__BackingField {
+            get {
+                return this.Statuk__BackingFieldField;
+            }
+            set {
+                if ((this.Statuk__BackingFieldField.Equals(value) != true)) {
+                    this.Statuk__BackingFieldField = value;
+                    this.RaisePropertyChanged("Statuk__BackingField");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="GetUpdateResponse", Namespace="http://schemas.datacontract.org/2004/07/HukukWs.Model")]
+    [System.SerializableAttribute()]
+    public partial class GetUpdateResponse : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private string Messagek__BackingFieldField;
+        
+        private string Operationk__BackingFieldField;
+        
+        private IpManagerWs.HukukWs.Statu Statuk__BackingFieldField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<Message>k__BackingField", IsRequired=true)]
+        public string Messagek__BackingField {
+            get {
+                return this.Messagek__BackingFieldField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Messagek__BackingFieldField, value) != true)) {
+                    this.Messagek__BackingFieldField = value;
+                    this.RaisePropertyChanged("Messagek__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<Operation>k__BackingField", IsRequired=true)]
+        public string Operationk__BackingField {
+            get {
+                return this.Operationk__BackingFieldField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Operationk__BackingFieldField, value) != true)) {
+                    this.Operationk__BackingFieldField = value;
+                    this.RaisePropertyChanged("Operationk__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<Statu>k__BackingField", IsRequired=true)]
+        public IpManagerWs.HukukWs.Statu Statuk__BackingField {
+            get {
+                return this.Statuk__BackingFieldField;
+            }
+            set {
+                if ((this.Statuk__BackingFieldField.Equals(value) != true)) {
+                    this.Statuk__BackingFieldField = value;
+                    this.RaisePropertyChanged("Statuk__BackingField");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="GetDeleteResponse", Namespace="http://schemas.datacontract.org/2004/07/HukukWs.Model")]
+    [System.SerializableAttribute()]
+    public partial class GetDeleteResponse : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private string Messagek__BackingFieldField;
+        
+        private string Operationk__BackingFieldField;
+        
+        private IpManagerWs.HukukWs.Statu Statuk__BackingFieldField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<Message>k__BackingField", IsRequired=true)]
+        public string Messagek__BackingField {
+            get {
+                return this.Messagek__BackingFieldField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Messagek__BackingFieldField, value) != true)) {
+                    this.Messagek__BackingFieldField = value;
+                    this.RaisePropertyChanged("Messagek__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<Operation>k__BackingField", IsRequired=true)]
+        public string Operationk__BackingField {
+            get {
+                return this.Operationk__BackingFieldField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Operationk__BackingFieldField, value) != true)) {
+                    this.Operationk__BackingFieldField = value;
+                    this.RaisePropertyChanged("Operationk__BackingField");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Name="<Statu>k__BackingField", IsRequired=true)]
+        public IpManagerWs.HukukWs.Statu Statuk__BackingField {
+            get {
+                return this.Statuk__BackingFieldField;
+            }
+            set {
+                if ((this.Statuk__BackingFieldField.Equals(value) != true)) {
+                    this.Statuk__BackingFieldField = value;
+                    this.RaisePropertyChanged("Statuk__BackingField");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="HukukWs.IHsClient")]
     public interface IHsClient {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHsClient/AuthenticateUser", ReplyAction="http://tempuri.org/IHsClient/AuthenticateUserResponse")]
-        IpManagerWs.HukukWs.HsResponseOfstring AuthenticateUser(int userId, string password);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHsClient/GetSumOfTwoInts", ReplyAction="http://tempuri.org/IHsClient/GetSumOfTwoIntsResponse")]
+        int GetSumOfTwoInts(int Operand1, int Operand2);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHsClient/GetSumOfTwoInts", ReplyAction="http://tempuri.org/IHsClient/GetSumOfTwoIntsResponse")]
+        System.Threading.Tasks.Task<int> GetSumOfTwoIntsAsync(int Operand1, int Operand2);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHsClient/AuthenticateUser", ReplyAction="http://tempuri.org/IHsClient/AuthenticateUserResponse")]
-        System.Threading.Tasks.Task<IpManagerWs.HukukWs.HsResponseOfstring> AuthenticateUserAsync(int userId, string password);
+        IpManagerWs.HukukWs.HsResponseAuthenticate AuthenticateUser(string dbname, string ip, int kullanicikodu, string password);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHsClient/GetMatters", ReplyAction="http://tempuri.org/IHsClient/GetMattersResponse")]
-        IpManagerWs.HukukWs.GetMattersResponse GetMatters(string dbname, int reporttype);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHsClient/AuthenticateUser", ReplyAction="http://tempuri.org/IHsClient/AuthenticateUserResponse")]
+        System.Threading.Tasks.Task<IpManagerWs.HukukWs.HsResponseAuthenticate> AuthenticateUserAsync(string dbname, string ip, int kullanicikodu, string password);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHsClient/GetMatters", ReplyAction="http://tempuri.org/IHsClient/GetMattersResponse")]
-        System.Threading.Tasks.Task<IpManagerWs.HukukWs.GetMattersResponse> GetMattersAsync(string dbname, int reporttype);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHsClient/GetProjeler", ReplyAction="http://tempuri.org/IHsClient/GetProjelerResponse")]
+        IpManagerWs.HukukWs.GetMattersResponse GetProjeler(string dbname, string ip, int userid, int reporttype, string startdate, string enddate);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHsClient/GetProjeler", ReplyAction="http://tempuri.org/IHsClient/GetProjelerResponse")]
+        System.Threading.Tasks.Task<IpManagerWs.HukukWs.GetMattersResponse> GetProjelerAsync(string dbname, string ip, int userid, int reporttype, string startdate, string enddate);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHsClient/GetKullanicilar", ReplyAction="http://tempuri.org/IHsClient/GetKullanicilarResponse")]
-        IpManagerWs.HukukWs.GetKullanicilarResponse GetKullanicilar(string dbname);
+        IpManagerWs.HukukWs.GetKullanicilarResponse GetKullanicilar(string dbname, string ip, int userid, int reporttype, string startdate, string enddate);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHsClient/GetKullanicilar", ReplyAction="http://tempuri.org/IHsClient/GetKullanicilarResponse")]
-        System.Threading.Tasks.Task<IpManagerWs.HukukWs.GetKullanicilarResponse> GetKullanicilarAsync(string dbname);
+        System.Threading.Tasks.Task<IpManagerWs.HukukWs.GetKullanicilarResponse> GetKullanicilarAsync(string dbname, string ip, int userid, int reporttype, string startdate, string enddate);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHsClient/GetCalismalar", ReplyAction="http://tempuri.org/IHsClient/GetCalismalarResponse")]
+        IpManagerWs.HukukWs.GetCalismalarResponse GetCalismalar(string dbname, string ip, string userid, string reporttype, string matterid, string kullaniciid, string startdate, string enddate);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHsClient/GetCalismalar", ReplyAction="http://tempuri.org/IHsClient/GetCalismalarResponse")]
+        System.Threading.Tasks.Task<IpManagerWs.HukukWs.GetCalismalarResponse> GetCalismalarAsync(string dbname, string ip, string userid, string reporttype, string matterid, string kullaniciid, string startdate, string enddate);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHsClient/CreateCalismalar", ReplyAction="http://tempuri.org/IHsClient/CreateCalismalarResponse")]
+        IpManagerWs.HukukWs.GetCreateResponse CreateCalismalar(string dbname, string ip, string userid, string tarih, string baslangicSaati, string bitisSaati, string aciklama, string projeID, string kullaniciID, string faturalanan, string faturalanmayan, string silinen);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHsClient/CreateCalismalar", ReplyAction="http://tempuri.org/IHsClient/CreateCalismalarResponse")]
+        System.Threading.Tasks.Task<IpManagerWs.HukukWs.GetCreateResponse> CreateCalismalarAsync(string dbname, string ip, string userid, string tarih, string baslangicSaati, string bitisSaati, string aciklama, string projeID, string kullaniciID, string faturalanan, string faturalanmayan, string silinen);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHsClient/UpdateCalismalar", ReplyAction="http://tempuri.org/IHsClient/UpdateCalismalarResponse")]
+        IpManagerWs.HukukWs.GetUpdateResponse UpdateCalismalar(string dbname, string ip, string id, string tarih, string baslangicSaati, string bitisSaati, string aciklama, string projeID, string faturalanan, string faturalanmayan, string silinen);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHsClient/UpdateCalismalar", ReplyAction="http://tempuri.org/IHsClient/UpdateCalismalarResponse")]
+        System.Threading.Tasks.Task<IpManagerWs.HukukWs.GetUpdateResponse> UpdateCalismalarAsync(string dbname, string ip, string id, string tarih, string baslangicSaati, string bitisSaati, string aciklama, string projeID, string faturalanan, string faturalanmayan, string silinen);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHsClient/DeleteCalismalar", ReplyAction="http://tempuri.org/IHsClient/DeleteCalismalarResponse")]
+        IpManagerWs.HukukWs.GetDeleteResponse DeleteCalismalar(string dbname, string ip, string id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHsClient/DeleteCalismalar", ReplyAction="http://tempuri.org/IHsClient/DeleteCalismalarResponse")]
+        System.Threading.Tasks.Task<IpManagerWs.HukukWs.GetDeleteResponse> DeleteCalismalarAsync(string dbname, string ip, string id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHsClient/LoadKullanicilar", ReplyAction="http://tempuri.org/IHsClient/LoadKullanicilarResponse")]
+        IpManagerWs.HukukWs.GetKullanicilarResponse LoadKullanicilar(string dbname, string ip, int userid, string selectedProjeId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHsClient/LoadKullanicilar", ReplyAction="http://tempuri.org/IHsClient/LoadKullanicilarResponse")]
+        System.Threading.Tasks.Task<IpManagerWs.HukukWs.GetKullanicilarResponse> LoadKullanicilarAsync(string dbname, string ip, int userid, string selectedProjeId);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHsClient/LoadProjeler", ReplyAction="http://tempuri.org/IHsClient/LoadProjelerResponse")]
+        IpManagerWs.HukukWs.GetMattersResponse LoadProjeler(string dbname, string ip, int userid);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHsClient/LoadProjeler", ReplyAction="http://tempuri.org/IHsClient/LoadProjelerResponse")]
+        System.Threading.Tasks.Task<IpManagerWs.HukukWs.GetMattersResponse> LoadProjelerAsync(string dbname, string ip, int userid);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -872,28 +1490,84 @@ namespace IpManagerWs.HukukWs {
                 base(binding, remoteAddress) {
         }
         
-        public IpManagerWs.HukukWs.HsResponseOfstring AuthenticateUser(int userId, string password) {
-            return base.Channel.AuthenticateUser(userId, password);
+        public int GetSumOfTwoInts(int Operand1, int Operand2) {
+            return base.Channel.GetSumOfTwoInts(Operand1, Operand2);
         }
         
-        public System.Threading.Tasks.Task<IpManagerWs.HukukWs.HsResponseOfstring> AuthenticateUserAsync(int userId, string password) {
-            return base.Channel.AuthenticateUserAsync(userId, password);
+        public System.Threading.Tasks.Task<int> GetSumOfTwoIntsAsync(int Operand1, int Operand2) {
+            return base.Channel.GetSumOfTwoIntsAsync(Operand1, Operand2);
         }
         
-        public IpManagerWs.HukukWs.GetMattersResponse GetMatters(string dbname, int reporttype) {
-            return base.Channel.GetMatters(dbname, reporttype);
+        public IpManagerWs.HukukWs.HsResponseAuthenticate AuthenticateUser(string dbname, string ip, int kullanicikodu, string password) {
+            return base.Channel.AuthenticateUser(dbname, ip, kullanicikodu, password);
         }
         
-        public System.Threading.Tasks.Task<IpManagerWs.HukukWs.GetMattersResponse> GetMattersAsync(string dbname, int reporttype) {
-            return base.Channel.GetMattersAsync(dbname, reporttype);
+        public System.Threading.Tasks.Task<IpManagerWs.HukukWs.HsResponseAuthenticate> AuthenticateUserAsync(string dbname, string ip, int kullanicikodu, string password) {
+            return base.Channel.AuthenticateUserAsync(dbname, ip, kullanicikodu, password);
         }
         
-        public IpManagerWs.HukukWs.GetKullanicilarResponse GetKullanicilar(string dbname) {
-            return base.Channel.GetKullanicilar(dbname);
+        public IpManagerWs.HukukWs.GetMattersResponse GetProjeler(string dbname, string ip, int userid, int reporttype, string startdate, string enddate) {
+            return base.Channel.GetProjeler(dbname, ip, userid, reporttype, startdate, enddate);
         }
         
-        public System.Threading.Tasks.Task<IpManagerWs.HukukWs.GetKullanicilarResponse> GetKullanicilarAsync(string dbname) {
-            return base.Channel.GetKullanicilarAsync(dbname);
+        public System.Threading.Tasks.Task<IpManagerWs.HukukWs.GetMattersResponse> GetProjelerAsync(string dbname, string ip, int userid, int reporttype, string startdate, string enddate) {
+            return base.Channel.GetProjelerAsync(dbname, ip, userid, reporttype, startdate, enddate);
+        }
+        
+        public IpManagerWs.HukukWs.GetKullanicilarResponse GetKullanicilar(string dbname, string ip, int userid, int reporttype, string startdate, string enddate) {
+            return base.Channel.GetKullanicilar(dbname, ip, userid, reporttype, startdate, enddate);
+        }
+        
+        public System.Threading.Tasks.Task<IpManagerWs.HukukWs.GetKullanicilarResponse> GetKullanicilarAsync(string dbname, string ip, int userid, int reporttype, string startdate, string enddate) {
+            return base.Channel.GetKullanicilarAsync(dbname, ip, userid, reporttype, startdate, enddate);
+        }
+        
+        public IpManagerWs.HukukWs.GetCalismalarResponse GetCalismalar(string dbname, string ip, string userid, string reporttype, string matterid, string kullaniciid, string startdate, string enddate) {
+            return base.Channel.GetCalismalar(dbname, ip, userid, reporttype, matterid, kullaniciid, startdate, enddate);
+        }
+        
+        public System.Threading.Tasks.Task<IpManagerWs.HukukWs.GetCalismalarResponse> GetCalismalarAsync(string dbname, string ip, string userid, string reporttype, string matterid, string kullaniciid, string startdate, string enddate) {
+            return base.Channel.GetCalismalarAsync(dbname, ip, userid, reporttype, matterid, kullaniciid, startdate, enddate);
+        }
+        
+        public IpManagerWs.HukukWs.GetCreateResponse CreateCalismalar(string dbname, string ip, string userid, string tarih, string baslangicSaati, string bitisSaati, string aciklama, string projeID, string kullaniciID, string faturalanan, string faturalanmayan, string silinen) {
+            return base.Channel.CreateCalismalar(dbname, ip, userid, tarih, baslangicSaati, bitisSaati, aciklama, projeID, kullaniciID, faturalanan, faturalanmayan, silinen);
+        }
+        
+        public System.Threading.Tasks.Task<IpManagerWs.HukukWs.GetCreateResponse> CreateCalismalarAsync(string dbname, string ip, string userid, string tarih, string baslangicSaati, string bitisSaati, string aciklama, string projeID, string kullaniciID, string faturalanan, string faturalanmayan, string silinen) {
+            return base.Channel.CreateCalismalarAsync(dbname, ip, userid, tarih, baslangicSaati, bitisSaati, aciklama, projeID, kullaniciID, faturalanan, faturalanmayan, silinen);
+        }
+        
+        public IpManagerWs.HukukWs.GetUpdateResponse UpdateCalismalar(string dbname, string ip, string id, string tarih, string baslangicSaati, string bitisSaati, string aciklama, string projeID, string faturalanan, string faturalanmayan, string silinen) {
+            return base.Channel.UpdateCalismalar(dbname, ip, id, tarih, baslangicSaati, bitisSaati, aciklama, projeID, faturalanan, faturalanmayan, silinen);
+        }
+        
+        public System.Threading.Tasks.Task<IpManagerWs.HukukWs.GetUpdateResponse> UpdateCalismalarAsync(string dbname, string ip, string id, string tarih, string baslangicSaati, string bitisSaati, string aciklama, string projeID, string faturalanan, string faturalanmayan, string silinen) {
+            return base.Channel.UpdateCalismalarAsync(dbname, ip, id, tarih, baslangicSaati, bitisSaati, aciklama, projeID, faturalanan, faturalanmayan, silinen);
+        }
+        
+        public IpManagerWs.HukukWs.GetDeleteResponse DeleteCalismalar(string dbname, string ip, string id) {
+            return base.Channel.DeleteCalismalar(dbname, ip, id);
+        }
+        
+        public System.Threading.Tasks.Task<IpManagerWs.HukukWs.GetDeleteResponse> DeleteCalismalarAsync(string dbname, string ip, string id) {
+            return base.Channel.DeleteCalismalarAsync(dbname, ip, id);
+        }
+        
+        public IpManagerWs.HukukWs.GetKullanicilarResponse LoadKullanicilar(string dbname, string ip, int userid, string selectedProjeId) {
+            return base.Channel.LoadKullanicilar(dbname, ip, userid, selectedProjeId);
+        }
+        
+        public System.Threading.Tasks.Task<IpManagerWs.HukukWs.GetKullanicilarResponse> LoadKullanicilarAsync(string dbname, string ip, int userid, string selectedProjeId) {
+            return base.Channel.LoadKullanicilarAsync(dbname, ip, userid, selectedProjeId);
+        }
+        
+        public IpManagerWs.HukukWs.GetMattersResponse LoadProjeler(string dbname, string ip, int userid) {
+            return base.Channel.LoadProjeler(dbname, ip, userid);
+        }
+        
+        public System.Threading.Tasks.Task<IpManagerWs.HukukWs.GetMattersResponse> LoadProjelerAsync(string dbname, string ip, int userid) {
+            return base.Channel.LoadProjelerAsync(dbname, ip, userid);
         }
     }
 }

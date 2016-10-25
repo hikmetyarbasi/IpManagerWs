@@ -25,6 +25,7 @@ namespace IpManagerWs.Model
     public class IpModel
     {
         public string Ip { get; set; }
+        public int userid { get; set; }
         public string DbName { get; set; }
         public string SirketKodu { get; set; }
         [DataMember]

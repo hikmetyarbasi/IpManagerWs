@@ -22,15 +22,22 @@ namespace IpManagerWs
         {
             return Operand1 + Operand2;
         }
-        public IpModel GetIpContract(int userId, string password, string sirketkodu)
+        public IpModel GetIpContract(string userId, string password, string sirketkodu)
         {
             var ipmodel = new IpModel();
             try
             {
                 ipmodel = _dbAccess.QueryItem<IpModel>("PROC_GETIP", new List<MySqlParameter> { new MySqlParameter("P_SIRKETKODU", sirketkodu) });
+
+                if (ipmodel.DbName == null)
+                {
+                    ipmodel.Statu = Model.Statu.fail;
+                    ipmodel.Message ="Geçersiz Hukuk Kodu";
+                    return ipmodel;
+                }
                 ipmodel.SirketKodu = sirketkodu;
                 ipmodel.Operation = "GetIpContract";
-                var response =hsClient.AuthenticateUser(userId, password);
+                var response = hsClient.AuthenticateUser(ipmodel.DbName,ipmodel.Ip,Convert.ToInt32(userId), password);
                 ipmodel.Message = response.Messagek__BackingField;
 
                 if ((int)response.Statuk__BackingField == (int)Model.Statu.fail)
@@ -40,14 +47,34 @@ namespace IpManagerWs
                 else
                 {
                     ipmodel.Statu = Model.Statu.success;
+                    ipmodel.userid = response.UserIdk__BackingField;
                 }
             }
             catch (Exception ex)
             {
                 ipmodel.Statu = Model.Statu.fail;
-                ipmodel.Message = ex.Message;
+                ipmodel.Message = "Geçersiz kullanıcı adı veya şifre";
             }
             return ipmodel;
+        }
+
+        public bool SaveIp(string hukukBuroKodu, string globalIp)
+        {
+            try
+            {
+                _dbAccess.ExecuteNonQuery("PROC_SAVEIP", new List<MySqlParameter> 
+                {
+                    new MySqlParameter("P_HUKUKBUROKODU", hukukBuroKodu) ,
+                    new MySqlParameter("P_GLOBALIP", globalIp) 
+                });
+                return true;
+            }
+            catch (Exception ex)
+            {
+                
+                throw ex;
+            }
+
         }
 
     }

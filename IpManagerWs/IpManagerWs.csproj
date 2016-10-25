@@ -79,7 +79,7 @@
     <Content Include="IpManagerWs.svc" />
     <None Include="Service References\HukukWs\configuration91.svcinfo" />
     <None Include="Service References\HukukWs\configuration.svcinfo" />
-    <Content Include="Service References\HukukWs\HsClient1.disco" />
+    <None Include="Service References\HukukWs\HsClient.disco" />
     <Content Include="Service References\HukukWs\IpManagerWs.HukukWs.GetKullanicilarResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
@@ -89,19 +89,34 @@
     <Content Include="Service References\HukukWs\IpManagerWs.HukukWs.HsResponseOfstring.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
-    <Content Include="Service References\HukukWs\HsClient1.wsdl" />
-    <None Include="Service References\HukukWs\HsClient4.xsd">
+    <None Include="Service References\HukukWs\HsClient.wsdl" />
+    <None Include="Service References\HukukWs\HsClient.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\HukukWs\HsClient41.xsd">
+    <None Include="Service References\HukukWs\HsClient1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\HukukWs\HsClient42.xsd">
+    <None Include="Service References\HukukWs\HsClient2.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\HukukWs\HsClient43.xsd">
+    <None Include="Service References\HukukWs\HsClient3.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Service References\HukukWs\IpManagerWs.HukukWs.GetCalismalarResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HukukWs\IpManagerWs.HukukWs.GetCreateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HukukWs\IpManagerWs.HukukWs.GetDeleteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HukukWs\IpManagerWs.HukukWs.GetUpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\HukukWs\IpManagerWs.HukukWs.HsResponseAuthenticate1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Service References\HukukWs\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>

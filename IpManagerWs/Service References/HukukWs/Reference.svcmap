@@ -19,15 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://192.168.1.39/HukukWsApp/HsClient.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost/HukukWsApp/HsClient.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="HsClient4.xsd" MetadataType="Schema" ID="e59ff1c4-d912-4b14-9931-709c3a571eb0" SourceId="1" SourceUrl="http://192.168.1.39/HukukWsApp/HsClient.svc?xsd=xsd3" />
-    <MetadataFile FileName="HsClient41.xsd" MetadataType="Schema" ID="59151428-2223-49df-a4cd-a70b18b951d5" SourceId="1" SourceUrl="http://192.168.1.39/HukukWsApp/HsClient.svc?xsd=xsd2" />
-    <MetadataFile FileName="HsClient42.xsd" MetadataType="Schema" ID="a58a644d-ba62-4878-ad21-3e2e386b8e25" SourceId="1" SourceUrl="http://192.168.1.39/HukukWsApp/HsClient.svc?xsd=xsd0" />
-    <MetadataFile FileName="HsClient1.wsdl" MetadataType="Wsdl" ID="a3963f0c-1019-41fc-b7b7-6fddf37845eb" SourceId="1" SourceUrl="http://192.168.1.39/HukukWsApp/HsClient.svc?wsdl" />
-    <MetadataFile FileName="HsClient1.disco" MetadataType="Disco" ID="16349140-e80c-4d52-9fcc-ad34e1fe4dea" SourceId="1" SourceUrl="http://192.168.1.39/HukukWsApp/HsClient.svc?disco" />
-    <MetadataFile FileName="HsClient43.xsd" MetadataType="Schema" ID="6b2a0d9b-ae58-44a2-b2da-13e69223facd" SourceId="1" SourceUrl="http://192.168.1.39/HukukWsApp/HsClient.svc?xsd=xsd1" />
+    <MetadataFile FileName="HsClient.disco" MetadataType="Disco" ID="40e06425-e41e-44db-912c-95de8b56f213" SourceId="1" SourceUrl="http://localhost/HukukWsApp/HsClient.svc?disco" />
+    <MetadataFile FileName="HsClient2.xsd" MetadataType="Schema" ID="7c9a5193-3784-461e-8350-05e2642a3679" SourceId="1" SourceUrl="http://localhost/HukukWsApp/HsClient.svc?xsd=xsd2" />
+    <MetadataFile FileName="HsClient.xsd" MetadataType="Schema" ID="f982487b-6fbc-4037-9ae4-296ebaa8558b" SourceId="1" SourceUrl="http://localhost/HukukWsApp/HsClient.svc?xsd=xsd0" />
+    <MetadataFile FileName="HsClient1.xsd" MetadataType="Schema" ID="daa40bcc-4e9b-4c32-b99a-741bf055e31a" SourceId="1" SourceUrl="http://localhost/HukukWsApp/HsClient.svc?xsd=xsd1" />
+    <MetadataFile FileName="HsClient.wsdl" MetadataType="Wsdl" ID="c0ed74a1-de84-493f-8b86-db062d4d7bda" SourceId="1" SourceUrl="http://localhost/HukukWsApp/HsClient.svc?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

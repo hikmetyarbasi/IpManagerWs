@@ -16,7 +16,9 @@ namespace IpManagerWs
         [OperationContract]
         int GetSumOfTwoInts(int Operand1, int Operand2);
         [OperationContract]
-        IpModel GetIpContract(int userId, string password, string sirketkodu);
+        IpModel GetIpContract(string userId, string password, string sirketkodu);
+        [OperationContract]
+        bool SaveIp(string hukukBuroKodu, string globalIp);
 
         // TODO: Add your service operations here
     }
